@@ -3,6 +3,8 @@ package com.km.springcloud.cfgbeans;
  * Created by asus-pc on 2019/6/29.
  */
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,5 +23,10 @@ public class ConfigBean {
     @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
+    }
+
+    @Bean
+    public IRule myRule(){
+        return new RandomRule();
     }
 }
