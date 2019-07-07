@@ -38,6 +38,7 @@ public class DeptController {
 
     @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
     public List<Dept> list(){
+        System.out.println("provider 的 /dept/list 方法被调用");
         return deptService.list();
     }
 
