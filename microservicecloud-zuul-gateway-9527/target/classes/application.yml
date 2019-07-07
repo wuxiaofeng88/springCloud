@@ -30,3 +30,8 @@ zuul:
   routes:
     mydept.serviceId: microservicecloud-dept
     mydept.path: /mydept/**
+  #隐藏单个服务
+  ignored-services: microservicecloud-dept
+  #隐藏所有微服务
+  #ignored-services: "*"
+  prefix: /km

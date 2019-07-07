@@ -30,3 +30,9 @@ zuul:
   routes:
     mydept.serviceId: microservicecloud-dept
     mydept.path: /mydept/**
+  #隐藏单个服务
+  ignored-services: microservicecloud-dept
+  #隐藏所有微服务
+  #ignored-services: "*"
+  #为服务添加前缀，即，原先的url访问地址为：http://myzuul.com:9527/mydept/dept/list ，添加前缀之后的访问地址为：http://myzuul.com:9527/km/mydept/dept/list
+  prefix: /km
