@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: microservicecloud-config-eureka-client   #指定文件名称
+      profile: dev    #指定环境
+      label: master   #指定代码分支
+      uri: http://config-3344.com:3344    #指定config服务器地址
