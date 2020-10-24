@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @ClassName ConfigClient_3355_StartSpringCloudApp
  * @Description TODO
  * @Author wujiancai
- * @Date 2019/7/9 20:42
+ * @Date 2019/7/9 20:42 
  * @Version 1.0
  **/
 @SpringBootApplication
